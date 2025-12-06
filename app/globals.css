@@ -8,8 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +17,293 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Ensure no extra space after footer */
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes gradient-breath {
+  0%, 100% {
+    width: 120px;
+    background: linear-gradient(to right, #101010 0%, #101010 15%, rgba(16, 16, 16, 0.9) 30%, rgba(16, 16, 16, 0.7) 50%, rgba(16, 16, 16, 0.4) 70%, rgba(16, 16, 16, 0.15) 85%, rgba(16, 16, 16, 0.03) 95%, transparent 100%);
+    opacity: 1;
+  }
+  25% {
+    width: 140px;
+    background: linear-gradient(to right, #101010 0%, #101010 12%, rgba(16, 16, 16, 0.85) 28%, rgba(16, 16, 16, 0.65) 48%, rgba(16, 16, 16, 0.35) 68%, rgba(16, 16, 16, 0.12) 83%, rgba(16, 16, 16, 0.02) 93%, transparent 100%);
+    opacity: 0.95;
+  }
+  50% {
+    width: 130px;
+    background: linear-gradient(to right, #101010 0%, #101010 18%, rgba(16, 16, 16, 0.95) 32%, rgba(16, 16, 16, 0.75) 52%, rgba(16, 16, 16, 0.45) 72%, rgba(16, 16, 16, 0.18) 87%, rgba(16, 16, 16, 0.04) 96%, transparent 100%);
+    opacity: 0.98;
+  }
+  75% {
+    width: 135px;
+    background: linear-gradient(to right, #101010 0%, #101010 14%, rgba(16, 16, 16, 0.88) 29%, rgba(16, 16, 16, 0.68) 49%, rgba(16, 16, 16, 0.38) 69%, rgba(16, 16, 16, 0.14) 84%, rgba(16, 16, 16, 0.025) 94%, transparent 100%);
+    opacity: 0.96;
+  }
+}
+
+@keyframes gradient-breath-right {
+  0%, 100% {
+    width: 120px;
+    background: linear-gradient(to left, #101010 0%, #101010 15%, rgba(16, 16, 16, 0.9) 30%, rgba(16, 16, 16, 0.7) 50%, rgba(16, 16, 16, 0.4) 70%, rgba(16, 16, 16, 0.15) 85%, rgba(16, 16, 16, 0.03) 95%, transparent 100%);
+    opacity: 1;
+  }
+  25% {
+    width: 140px;
+    background: linear-gradient(to left, #101010 0%, #101010 12%, rgba(16, 16, 16, 0.85) 28%, rgba(16, 16, 16, 0.65) 48%, rgba(16, 16, 16, 0.35) 68%, rgba(16, 16, 16, 0.12) 83%, rgba(16, 16, 16, 0.02) 93%, transparent 100%);
+    opacity: 0.95;
+  }
+  50% {
+    width: 130px;
+    background: linear-gradient(to left, #101010 0%, #101010 18%, rgba(16, 16, 16, 0.95) 32%, rgba(16, 16, 16, 0.75) 52%, rgba(16, 16, 16, 0.45) 72%, rgba(16, 16, 16, 0.18) 87%, rgba(16, 16, 16, 0.04) 96%, transparent 100%);
+    opacity: 0.98;
+  }
+  75% {
+    width: 135px;
+    background: linear-gradient(to left, #101010 0%, #101010 14%, rgba(16, 16, 16, 0.88) 29%, rgba(16, 16, 16, 0.68) 49%, rgba(16, 16, 16, 0.38) 69%, rgba(16, 16, 16, 0.14) 84%, rgba(16, 16, 16, 0.025) 94%, transparent 100%);
+    opacity: 0.96;
+  }
+}
+
+.animate-gradient-breath {
+  animation: gradient-breath 5s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  @keyframes gradient-breath {
+    0%, 100% {
+      width: 400px;
+      background: linear-gradient(to right, #101010 0%, #101010 10%, rgba(16, 16, 16, 0.95) 20%, rgba(16, 16, 16, 0.85) 35%, rgba(16, 16, 16, 0.6) 50%, rgba(16, 16, 16, 0.3) 70%, rgba(16, 16, 16, 0.1) 85%, rgba(16, 16, 16, 0.02) 95%, transparent 100%);
+      opacity: 1;
+    }
+    25% {
+      width: 480px;
+      background: linear-gradient(to right, #101010 0%, #101010 8%, rgba(16, 16, 16, 0.9) 18%, rgba(16, 16, 16, 0.75) 32%, rgba(16, 16, 16, 0.5) 48%, rgba(16, 16, 16, 0.25) 68%, rgba(16, 16, 16, 0.08) 83%, rgba(16, 16, 16, 0.01) 94%, transparent 100%);
+      opacity: 0.95;
+    }
+    50% {
+      width: 440px;
+      background: linear-gradient(to right, #101010 0%, #101010 12%, rgba(16, 16, 16, 0.98) 22%, rgba(16, 16, 16, 0.88) 37%, rgba(16, 16, 16, 0.65) 52%, rgba(16, 16, 16, 0.35) 72%, rgba(16, 16, 16, 0.12) 87%, rgba(16, 16, 16, 0.03) 96%, transparent 100%);
+      opacity: 0.98;
+    }
+    75% {
+      width: 460px;
+      background: linear-gradient(to right, #101010 0%, #101010 9%, rgba(16, 16, 16, 0.92) 19%, rgba(16, 16, 16, 0.8) 33%, rgba(16, 16, 16, 0.55) 49%, rgba(16, 16, 16, 0.28) 69%, rgba(16, 16, 16, 0.09) 84%, rgba(16, 16, 16, 0.015) 94%, transparent 100%);
+      opacity: 0.96;
+    }
+  }
+
+  @keyframes gradient-breath-right {
+    0%, 100% {
+      width: 400px;
+      background: linear-gradient(to left, #101010 0%, #101010 10%, rgba(16, 16, 16, 0.95) 20%, rgba(16, 16, 16, 0.85) 35%, rgba(16, 16, 16, 0.6) 50%, rgba(16, 16, 16, 0.3) 70%, rgba(16, 16, 16, 0.1) 85%, rgba(16, 16, 16, 0.02) 95%, transparent 100%);
+      opacity: 1;
+    }
+    25% {
+      width: 480px;
+      background: linear-gradient(to left, #101010 0%, #101010 8%, rgba(16, 16, 16, 0.9) 18%, rgba(16, 16, 16, 0.75) 32%, rgba(16, 16, 16, 0.5) 48%, rgba(16, 16, 16, 0.25) 68%, rgba(16, 16, 16, 0.08) 83%, rgba(16, 16, 16, 0.01) 94%, transparent 100%);
+      opacity: 0.95;
+    }
+    50% {
+      width: 440px;
+      background: linear-gradient(to left, #101010 0%, #101010 12%, rgba(16, 16, 16, 0.98) 22%, rgba(16, 16, 16, 0.88) 37%, rgba(16, 16, 16, 0.65) 52%, rgba(16, 16, 16, 0.35) 72%, rgba(16, 16, 16, 0.12) 87%, rgba(16, 16, 16, 0.03) 96%, transparent 100%);
+      opacity: 0.98;
+    }
+    75% {
+      width: 460px;
+      background: linear-gradient(to left, #101010 0%, #101010 9%, rgba(16, 16, 16, 0.92) 19%, rgba(16, 16, 16, 0.8) 33%, rgba(16, 16, 16, 0.55) 49%, rgba(16, 16, 16, 0.28) 69%, rgba(16, 16, 16, 0.09) 84%, rgba(16, 16, 16, 0.015) 94%, transparent 100%);
+      opacity: 0.96;
+    }
+  }
+}
+
+.animate-gradient-breath-right {
+  animation: gradient-breath-right 5s ease-in-out infinite 2.5s;
+}
+
+/* Warping animation for gradient blurs - combined with parallax */
+@keyframes gradient-warp {
+  0% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.32;
+    filter: blur(1300px);
+  }
+  25% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(50px, -30px) scale(1.2) rotate(5deg);
+    opacity: 0.4;
+    filter: blur(1400px);
+  }
+  50% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(-30px, 40px) scale(0.9) rotate(-5deg);
+    opacity: 0.35;
+    filter: blur(1200px);
+  }
+  75% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(40px, 20px) scale(1.1) rotate(3deg);
+    opacity: 0.38;
+    filter: blur(1350px);
+  }
+  100% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.32;
+    filter: blur(1300px);
+  }
+}
+
+@keyframes gradient-warp-2 {
+  0% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.28;
+    filter: blur(800px);
+  }
+  33% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(-60px, 50px) scale(1.3) rotate(-8deg);
+    opacity: 0.35;
+    filter: blur(1000px);
+  }
+  66% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(70px, -40px) scale(0.85) rotate(10deg);
+    opacity: 0.3;
+    filter: blur(900px);
+  }
+  100% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.28;
+    filter: blur(800px);
+  }
+}
+
+@keyframes gradient-warp-3 {
+  0% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.3;
+    filter: blur(600px);
+  }
+  20% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(80px, 60px) scale(1.4) rotate(12deg);
+    opacity: 0.4;
+    filter: blur(800px);
+  }
+  40% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(-50px, -70px) scale(0.8) rotate(-15deg);
+    opacity: 0.25;
+    filter: blur(500px);
+  }
+  60% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(90px, -30px) scale(1.2) rotate(8deg);
+    opacity: 0.35;
+    filter: blur(700px);
+  }
+  80% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(-40px, 50px) scale(0.9) rotate(-10deg);
+    opacity: 0.28;
+    filter: blur(550px);
+  }
+  100% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.3;
+    filter: blur(600px);
+  }
+}
+
+@keyframes gradient-warp-slow {
+  0% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.25;
+    filter: blur(1000px);
+  }
+  50% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(100px, -80px) scale(1.5) rotate(20deg);
+    opacity: 0.4;
+    filter: blur(1500px);
+  }
+  100% {
+    transform: translate(0, var(--parallax-y, 0px)) translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0.25;
+    filter: blur(1000px);
+  }
+}
+
+.animate-gradient-warp {
+  animation: gradient-warp 8s ease-in-out infinite;
+}
+
+.animate-gradient-warp-2 {
+  animation: gradient-warp-2 10s ease-in-out infinite;
+}
+
+.animate-gradient-warp-3 {
+  animation: gradient-warp-3 12s ease-in-out infinite;
+}
+
+.animate-gradient-warp-slow {
+  animation: gradient-warp-slow 15s ease-in-out infinite;
+}
+
+/* Parallax optimization */
+[data-parallax] {
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Ensure background container spans full height */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Partner images responsive sizing */
+.partner-image-wrapper {
+  width: var(--width-mobile);
+  height: var(--height-mobile);
+}
+
+@media (min-width: 768px) {
+  .partner-image-wrapper {
+    width: var(--width-desktop);
+    height: var(--height-desktop);
+  }
 }
