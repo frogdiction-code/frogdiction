@@ -103,7 +103,7 @@ export default function Hero() {
       </ScrollAnimation>
 
       {/* Screenshot Section - Separate Animation with Delay */}
-      <ScrollAnimation delay={4}>
+      <ScrollAnimation delay={0.5}>
         <div className="mt-12 md:mt-16 lg:mt-20 relative">
           <div className="flex items-center justify-center">
             <div className="w-full max-w-full md:max-w-[900px] lg:max-w-[1000px]">
