@@ -9,7 +9,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="relative bg-[#101010] overflow-x-hidden flex-1 flex flex-col w-full">
+    <div className="relative bg-[#101010] overflow-x-hidden flex-1 flex flex-col w-full min-h-screen">
       {/* Fixed background layer with gradients */}
       <div className="fixed inset-0 w-full h-full pointer-events-none z-0">
         <BackgroundBlur />
