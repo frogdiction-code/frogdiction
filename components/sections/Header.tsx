@@ -58,7 +58,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-[#87be2f] border border-[#9dff00] rounded-[8px] md:rounded-[10px] h-[32px] md:h-[40px] px-4 md:px-6 text-white text-[13px] md:text-[15px] font-black tracking-[-0.65px] md:tracking-[-0.75px] transition-all duration-300 cursor-pointer hover:bg-[#9dff00] hover:shadow-[0_0_20px_rgba(157,255,0,0.4)] inline-flex items-center justify-center"
           >
-            Buy $FDTN
+            Go To App
           </a>
 
           {/* Mobile Menu Button */}
