@@ -14,7 +14,7 @@ const slides = [
     image: "/images/screenshot-1.png",
     frogImage: "/images/features-frog.png",
     buttonText: "Try it now",
-    buttonLink: "#",
+    buttonLink: "https://app.frogdiction.com/",
   },
   {
     badge: "Predict. Win. Repeat.",
@@ -24,7 +24,7 @@ const slides = [
     image: "/images/screenshot-2.png",
     frogImage: "/images/feature_2.png",
     buttonText: "Play Price Bet",
-    buttonLink: "#",
+    buttonLink: "https://app.frogdiction.com/",
   },
   {
     badge: "50/50 Fair Odds.",
@@ -34,7 +34,7 @@ const slides = [
     image: "/images/screenshot-3.png",
     frogImage: "/images/feature_3.png",
     buttonText: "Play Head or Butt",
-    buttonLink: "#",
+    buttonLink: "https://app.frogdiction.com/",
   },
   {
     badge: "Compete. Climb. Conquer.",
@@ -43,7 +43,7 @@ const slides = [
     image: "/images/screenshot-3.png",
     frogImage: "/images/feature_4.png",
     buttonText: "View Leaderboard",
-    buttonLink: "#",
+    buttonLink: "https://app.frogdiction.com/",
   },
 ]
 

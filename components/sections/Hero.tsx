@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="flex gap-3 md:gap-4 justify-center md:justify-start">
               {/* Telegram - First */}
               <a
-                href="#"
+                href="https://t.me/frogdiction"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#87be2f] border border-[#a2d046] rounded-[12px] md:rounded-[14px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#9dff00] transition-colors cursor-pointer"
@@ -73,7 +73,7 @@ export default function Hero() {
               </a>
               {/* X (Twitter) - Third */}
               <a
-                href="#"
+                href="https://x.com/Frogdiction_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#87be2f] border border-[#a2d046] rounded-[12px] md:rounded-[14px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#9dff00] transition-colors cursor-pointer"

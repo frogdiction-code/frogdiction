@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="flex gap-3 md:gap-4">
             {/* Telegram - First */}
             <a
-              href="#"
+              href="https://t.me/frogdiction"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#3d3d3d] border border-[#4c4c4c] rounded-[10px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#4c4c4c] transition-colors cursor-pointer"
@@ -44,7 +44,7 @@ export default function Footer() {
             </a>
             {/* X (Twitter) - Third */}
             <a
-              href="#"
+              href="https://x.com/Frogdiction_"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#3d3d3d] border border-[#4c4c4c] rounded-[10px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#4c4c4c] transition-colors cursor-pointer"
