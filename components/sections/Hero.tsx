@@ -24,7 +24,7 @@ export default function Hero() {
 
             {/* Main Title */}
             <h1 className="text-[#fbfbfb] text-[64px] md:text-[72px] lg:text-[80px] font-black tracking-[-3.2px] md:tracking-[-3.6px] lg:tracking-[-4px] leading-[0.95]">
-              $FDTN
+              FROGDICTION
             </h1>
 
             {/* Description */}
