@@ -22,7 +22,7 @@ export default function About() {
 
           {/* Title */}
           <h2 className="text-[#fbfbfb] text-[48px] md:text-[56px] lg:text-[64px] font-black tracking-[-2.4px] md:tracking-[-2.8px] lg:tracking-[-3.2px] leading-[0.95]">
-            About <span className="text-[#a2d046]">$FDTN</span>
+            About <span className="text-[#a2d046]">FROGDICTION</span>
           </h2>
 
           {/* Description */}
