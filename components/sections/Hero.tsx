@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-[#fbfbfb] text-[64px] md:text-[72px] lg:text-[80px] font-black tracking-[-3.2px] md:tracking-[-3.6px] lg:tracking-[-4px] leading-[0.95]">
+            <h1 className="text-[#fbfbfb] text-[54px] md:text-[72px] lg:text-[80px] font-black tracking-[-3.2px] md:tracking-[-3.6px] lg:tracking-[-4px] leading-[0.95]">
               FROGDICTION
             </h1>
 
