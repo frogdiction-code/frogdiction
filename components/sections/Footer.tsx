@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
             {/* Pump Fun - Second */}
             <a
-              href="#"
+              href="https://pump.fun/coin/At81o3WU6Ww7pBj3Duj8KBdWyAskzS1vY1Jhg6ELpump"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#3d3d3d] border border-[#4c4c4c] rounded-[10px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#4c4c4c] transition-colors cursor-pointer"
