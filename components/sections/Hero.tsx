@@ -35,7 +35,7 @@ export default function Hero() {
             {/* Wallet Address */}
             <div className="bg-[#232229] border border-[#355600] rounded-[16px] h-[52px] md:h-[56px] flex items-center justify-between px-4 md:px-5 max-w-full md:max-w-[420px] lg:max-w-[480px] mx-auto md:mx-0">
               <span className="text-[#7d7d7d] text-[14px] md:text-[15px] lg:text-[16px] font-bold tracking-[-0.7px] truncate">
-                8uu3yAY9u.....naxstgW1pump
+                At81o3WU6Ww7pBj3Duj8KBdWyAskzS1vY1Jhg6ELpump
               </span>
               <button className="bg-[#87be2f] border border-[#a2d046] rounded-[10px] h-[36px] md:h-[40px] w-[90px] md:w-[100px] flex items-center justify-center gap-1.5 hover:bg-[#9dff00] transition-colors shrink-0 cursor-pointer">
                 <Copy className="text-white w-3.5 h-3.5 md:w-4 md:h-4" />
@@ -58,7 +58,7 @@ export default function Hero() {
               </a>
               {/* Pump Fun - Second */}
               <a
-                href="#"
+                href="https://pump.fun/coin/At81o3WU6Ww7pBj3Duj8KBdWyAskzS1vY1Jhg6ELpump"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#87be2f] border border-[#a2d046] rounded-[12px] md:rounded-[14px] w-[44px] h-[44px] md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px] flex items-center justify-center hover:bg-[#9dff00] transition-colors cursor-pointer"
